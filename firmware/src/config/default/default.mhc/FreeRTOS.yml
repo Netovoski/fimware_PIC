@@ -1,0 +1,78 @@
+format_version: v1.0
+type: UniqueComponent
+attributes: {id: FreeRTOS}
+children:
+- type: Symbols
+  children:
+  - type: Boolean
+    attributes: {id: FREERTOS_DAEMON_TASK_STARTUP_HOOK}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: FreeRTOS, value: 'false'}
+  - type: Boolean
+    attributes: {id: FREERTOS_INCLUDE_XSEMAPHOREGETMUTEXHOLDER}
+    children:
+    - type: Values
+      children:
+      - type: User
+        attributes: {value: 'true'}
+  - type: Integer
+    attributes: {id: FREERTOS_PERIPHERAL_CLOCK_HZ}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: FreeRTOS, value: '8000000'}
+  - type: Integer
+    attributes: {id: FREERTOS_QUEUE_REGISTRY_SIZE}
+    children:
+    - type: Values
+      children:
+      - type: User
+        attributes: {value: '3'}
+  - type: Integer
+    attributes: {id: FREERTOS_TIMER_QUEUE_LENGTH}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: FreeRTOS, value: '0'}
+  - type: Integer
+    attributes: {id: FREERTOS_TIMER_TASK_PRIORITY}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: FreeRTOS, value: '0'}
+  - type: Integer
+    attributes: {id: FREERTOS_TIMER_TASK_STACK_DEPTH}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: FreeRTOS, value: '0'}
+  - type: Boolean
+    attributes: {id: FREERTOS_USE_QUEUE_SETS}
+    children:
+    - type: Values
+      children:
+      - type: User
+        attributes: {value: 'false'}
+  - type: Boolean
+    attributes: {id: FREERTOS_USE_TASK_FPU_SUPPORT}
+    children:
+    - type: Values
+      children:
+      - type: User
+        attributes: {value: 'true'}
+  - type: Boolean
+    attributes: {id: FREERTOS_USE_TIMERS}
+    children:
+    - type: Values
+      children:
+      - type: User
+        attributes: {value: 'false'}
+- type: ElementPosition
+  attributes: {x: '62', y: '87', id: FreeRTOS}
